@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    tools:context="com.androidprojects.sunilsharma.leconpsm.Activities.ADDProspectCustomerActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"/>
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch"/>
+        <Spinner
+            android:id="@+id/spinnerBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtContactPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:inputType="text"
+                android:hint="Enter Contact Person"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:inputType="text"
+                android:hint="Enter Company Name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtDesignation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:inputType="text"
+                android:hint="Enter Designation"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtPlant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:inputType="text"
+                android:hint="Enter Plant"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:inputType="text"
+                android:hint="Enter Company Name"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State"/>
+        <Spinner
+            android:id="@+id/spinnerState"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"/>
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"/>
+        <Spinner
+            android:id="@+id/spinnerArea"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtLandmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:inputType="text"
+                android:hint="Enter LandMark"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="12">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtTelephoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:inputType="number"
+                android:hint="Enter Telephone Number"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="10">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtAlternateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:inputType="number"
+                android:hint="Enter Mobile Number"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="10">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:inputType="number"
+                android:hint="Enter Mobile Number"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Email Address"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:hint="Enter Website URL"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtHeadOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:hint="Enter Head Office Name"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:hint="Enter Date Of Birth"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtDOA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:hint="Enter Date Of Anniversary"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:hint="Enter Remark"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"/>
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Type"/>
+        <Spinner
+            android:id="@+id/spinnerCustomerType"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"></Spinner>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edtDetailedDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:nestedScrollingEnabled="true"
+                android:hint="Enter Detailed Description"
+                android:defaultFocusHighlightEnabled="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert Data"
+            android:background="@drawable/btn_sign_in_background"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

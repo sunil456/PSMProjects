@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/prospect_customer_entry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+
+            <TextView
+                android:id="@+id/txtCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCompanyName"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtType"
+                android:autoSizeTextType="uniform"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/txtArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAddress"
+                android:autoSizeTextType="uniform"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/txtLandmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtArea"
+                android:autoSizeTextType="uniform"
+                android:textStyle="italic"/>
+
+
+            <TextView
+                android:id="@+id/txtEmailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLandmark"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"/>
+
+
+
+            <TextView
+                android:id="@+id/txtPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/txtCompanyName"
+                android:autoSizeTextType="uniform"/>
+
+            <TextView
+                android:id="@+id/txtMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPersonName"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

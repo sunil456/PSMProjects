@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidprojects.sunilsharma.leconpsm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.Home"
+            android:label="@string/title_activity_admin_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.ProspectCustomerEntry" />
+        <activity android:name=".Activities.PendingActivityList" />
+        <activity android:name=".Activities.Opportunity" />
+        <activity android:name=".Activities.LeadEnquiryEntry" />
+        <activity android:name=".Activities.ActivityEntry" />
+        <activity android:name=".Activities.ADDProspectCustomerActivity" />
+        <activity
+            android:name=".Activities.DetailsActicity"
+            android:label="@string/title_activity_details_acticity"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

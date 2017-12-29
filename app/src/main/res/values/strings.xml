@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">LE-CON</string>
+    <string name="company_name">PSM SoftTech Pvt.Ltd</string>
+    <string name="psmSlogan">(We Developed Your Concept)</string>
+    <string name="developed_and_design">Developed And Design BY</string>
+    <string name="title_activity_admin_home">AdminHome</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!-- This array for Customer Type-->
+    <string-array name="Type">
+        <item>Prospect</item>
+        <item>Customer</item>
+    </string-array>
+
+    <!-- This array for Customer Type-->
+    <string-array name="customer_Type">
+        <item>Hot</item>
+        <item>Worm</item>
+        <item>Cold</item>
+    </string-array>
+
+    <!-- This array for Category-->
+    <string-array name="Category">
+        <item>Test</item>
+    </string-array>
+    <string name="title_activity_details_acticity">DetailsActicity</string>
+</resources>
